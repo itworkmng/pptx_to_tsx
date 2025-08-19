@@ -15,6 +15,9 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <div className="text-3xl font-bold">Upwork remote work</div>
       <div className="text-xl font-bold text-red-500">PPTX to .TSX</div>
+      <ul>
+        <li><a className="hover:underline font-medium hover:font-bold" href="/slides/slide1">Slide-1</a></li>
+      </ul>
     </div>
   );
 }

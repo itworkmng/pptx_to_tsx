@@ -12,6 +12,9 @@ const geistMono = Geist_Mono({
 
 export default function Home() {
   return (
-   <></>
+    <div>
+      <div className="text-3xl font-bold">Upwork remote work</div>
+      <div className="text-xl font-bold text-red-500">PPTX to .TSX</div>
+    </div>
   );
 }

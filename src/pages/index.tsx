@@ -1,4 +1,4 @@
-import { slidesHref } from "./utils/data";
+import { slidesHref } from "@/utils/data";
 
 export default function Home() {
   

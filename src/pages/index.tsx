@@ -1,22 +1,22 @@
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { slidesHref } from "./utils/data";
 
 export default function Home() {
+  
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <div className="text-3xl font-bold">Upwork remote work</div>
       <div className="text-xl font-bold text-red-500">PPTX to .TSX</div>
       <ul>
-        <li><a className="hover:underline font-medium hover:font-bold" href="/slides/slide1">Slide-1</a></li>
+         {slidesHref.map((slide) => (
+          <li key={slide.id}>
+            <a
+              href={`/slides/${slide.id}`}
+              className="hover:underline font-medium hover:font-bold text-xl"
+            >
+              {slide.title}
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   );
